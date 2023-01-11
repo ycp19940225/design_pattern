@@ -35,6 +35,6 @@ class AbstractFactoryTest extends TestCase
             $factory->createText('LaravelAcademy.org')
         );
 
-        $this->assertContainsOnly('DesignPatterns\Creational\AbstractFactory\MediaInterface', $article);
+        $this->assertContainsOnly('App\creative_mode\abstract_factory\MediaInterface', $article);
     }
 }
