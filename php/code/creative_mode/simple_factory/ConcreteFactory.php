@@ -22,6 +22,5 @@ class ConcreteFactory
         if(!array_key_exists($type, $this->typeList)){
             throw new \InvalidArgumentException("$type");
         }
-
     }
 }
