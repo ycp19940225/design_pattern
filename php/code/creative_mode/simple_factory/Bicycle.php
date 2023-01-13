@@ -2,7 +2,7 @@
 
 namespace App\creative_mode\simple_factory;
 
-class Bicycle implements VehicleInterface
+class Bicycle implements FormatterInterface
 {
 
     public function driveTo($destination)

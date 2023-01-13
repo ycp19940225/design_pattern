@@ -1,8 +1,8 @@
 <?php
 
-namespace App\creative_mode\simple_factory;
+namespace App\creative_mode\static_factory;
 
-class Scooter implements FormatterInterface
+class FormatString implements FormatterInterface
 {
 
     public function driveTo($destination)

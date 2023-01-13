@@ -2,7 +2,7 @@
 
 namespace App\creative_mode\simple_factory\Tests;
 
-use App\creative_mode\simple_factory\ConcreteFactory;
+use App\creative_mode\simple_factory\StaticFactory;
 use PHPUnit\Framework\TestCase;
 
 class ConcreteFactoryTest extends TestCase
@@ -12,7 +12,7 @@ class ConcreteFactoryTest extends TestCase
 
     protected function setUp() : void
     {
-        $this->factory = new ConcreteFactory();
+        $this->factory = new StaticFactory();
     }
 
     public function getType()
@@ -29,7 +29,7 @@ class ConcreteFactoryTest extends TestCase
     public function testCreation($type)
     {
         $obj = $this->factory->createVehicle($type);
-        $this->assertInstanceOf('App\creative_mode\simple_factory\VehicleInterface', $obj);
+        $this->assertInstanceOf('App\creative_mode\simple_factory\FormatterInterface', $obj);
     }
 
     /**
