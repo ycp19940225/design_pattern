@@ -2,7 +2,7 @@
 
 namespace App\creative_mode\builder\Parts;
 
-class Bike
+class Bike extends Vehicle
 {
 
 }
