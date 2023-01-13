@@ -20,7 +20,10 @@ class ConcreteFactory
     public function createVehicle($type)
     {
         if(!array_key_exists($type, $this->typeList)){
-            throw new \InvalidArgumentException("$type");
+            throw new \InvalidArgumentException("$type is not valid vehicle");
         }
+
+        $className = $this->typeList[$type];
+        return new $className();
     }
 }
