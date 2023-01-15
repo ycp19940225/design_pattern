@@ -2,7 +2,9 @@
 
 namespace App\structural_mode\Dependency;
 
-class Parameters
+interface Parameters
 {
 
+    public function get($key);
+    public function set($key, $value);
 }
