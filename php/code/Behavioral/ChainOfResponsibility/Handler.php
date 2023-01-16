@@ -32,5 +32,5 @@ abstract class Handler
     /*
      * @return bool true if the request has been processed
      */
-    abstract protected function processing(Request $request){}
+    abstract protected function processing(Request $request);
 }
