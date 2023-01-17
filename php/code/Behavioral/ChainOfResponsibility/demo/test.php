@@ -118,4 +118,11 @@ $handler2->setNext($handler3);
 
 
 
-$handler1->handler();
+//$handler1->handler();
+
+
+class test{
+    public $handler;
+
+}
+
